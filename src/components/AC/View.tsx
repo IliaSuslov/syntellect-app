@@ -16,7 +16,7 @@ const View = ({ viewModel, maxHints }: ACControlProps) => {
       <>
         {hints
           ?.filter((_, i) => i < maxHints)
-          .map(({ flag, name, fullName }: any, i: any) => {
+          .map(({ flag, name, fullName }, i) => {
             return (
               <div
                 className="l_item"
